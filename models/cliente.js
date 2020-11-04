@@ -7,6 +7,9 @@ class Cliente {
   tudoLetraMinuscula(){
     return this.nome.toLowerCase()
   }
+  tudoLetraMaiuscula(){
+    return this.nome.toUpperCase()
+  }
 
   validarCPF() {
     if(!this.cpf) return false

@@ -4,7 +4,7 @@ context('testar Home Page', () => {
   })
 
   it('Deve preencher um CPF e verificar como válido', () => {
-    cy.get('input').type('351.455.030-16')
+    cy.get('#cpf').type('351.455.030-16')
     cy.wait(1000)
     cy.get('form button').click()
     cy.wait(1000)
